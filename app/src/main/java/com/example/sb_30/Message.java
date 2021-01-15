@@ -6,7 +6,7 @@ public class Message {
     String address; //휴대폰번호
     String contactId;
     String contactId_string;
-    String timestamp; //시간
+    long timestamp; //시간
     String body; //문자내용
 
     public Message(){}
@@ -51,11 +51,11 @@ public class Message {
         this.contactId_string = contactId_string;
     }
 
-    public String getTimestamp() {
+    public long getTimestamp() {
         return timestamp;
     }
 
-    public void setTimestamp(String timestamp) {
+    public void setTimestamp(long timestamp) {
         this.timestamp = timestamp;
     }
 
